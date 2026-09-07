@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Youth Society for Public Health in JNFLS is a student-led academic society advancing public health literacy, research practice, and community action."
+      content="济南外国语学校青年公共卫生学会，面向中国校园与社区传播结核病知识，开展公共健康教育、健康微光项目与青年公共卫生行动。"
     />
-    <title>Youth Society for Public Health in JNFLS</title>
+    <title>济南外国语学校青年公共卫生学会 | YSPH-JNFLS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=design5" />
+    <link rel="stylesheet" href="styles.css?v=design6" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -29,141 +29,184 @@
       </button>
 
       <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
-        <a href="about.html">About Us</a>
-        <a href="index.html#mission">Mission</a>
-        <a href="index.html#glimmer">Health Glimmer</a>
-        <a href="index.html#programs">Programs</a>
-        <a href="index.html#research">Research</a>
-        <a href="index.html#join" class="nav-cta">Join</a>
+        <a href="about.html" data-zh="关于我们" data-en="About Us">关于我们</a>
+        <a href="index.html#tb-knowledge" data-zh="结核病知识" data-en="TB Knowledge">结核病知识</a>
+        <a href="index.html#glimmer" data-zh="健康微光" data-en="Health Glimmer">健康微光</a>
+        <a href="index.html#programs" data-zh="行动项目" data-en="Programs">行动项目</a>
+        <a href="index.html#research" data-zh="研究记录" data-en="Research">研究记录</a>
+        <a href="index.html#contact" class="nav-cta" data-zh="联系" data-en="Contact">联系</a>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">EN</button>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero tb-first-hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
           src="images/JNFLS/9c23fe79a8b282987402b739eb961bec.jpg"
-          alt="Jinan Foreign Language School campus under a blue sky"
+          alt="济南外国语学校校园"
         />
         <div class="hero-shade"></div>
         <div class="hero-content">
           <div class="hero-meta" aria-label="Institution metadata" data-reveal>
-            <span>Student-led public health society</span>
-            <span>Jinan Foreign Language School</span>
-            <span>Evidence / Prevention / Community</span>
+            <span data-zh="中国校园公共健康传播" data-en="Public health communication in China">中国校园公共健康传播</span>
+            <span data-zh="结核病知识普及" data-en="Tuberculosis literacy">结核病知识普及</span>
+            <span data-zh="济南外国语学校" data-en="Jinan Foreign Language School">济南外国语学校</span>
           </div>
-          <p class="eyebrow" data-reveal>Youth Society for Public Health in JNFLS</p>
-          <h1 id="hero-title" data-hero-title data-reveal>Public health begins where we learn, live, and serve.</h1>
-          <p class="hero-copy" data-reveal>
-            A student-led academic society advancing public health literacy, research practice, and community action at
-            Jinan Foreign Language School.
+          <p class="eyebrow" data-reveal data-zh="济南外国语学校青年公共卫生学会" data-en="Youth Society for Public Health in JNFLS">
+            济南外国语学校青年公共卫生学会
+          </p>
+          <h1
+            id="hero-title"
+            data-hero-title
+            data-reveal
+            data-zh="在中国，了解结核病，也理解公共健康。"
+            data-en="Understanding tuberculosis, and public health, in China."
+          >
+            在中国，了解结核病，也理解公共健康。
+          </h1>
+          <p
+            class="hero-copy"
+            data-reveal
+            data-zh="我们从结核病防治知识出发，把准确、简洁、可行动的公共健康信息带进校园、社区与边远山区。"
+            data-en="We begin with tuberculosis prevention and bring accurate, concise, actionable public health knowledge to schools, communities, and remote mountain areas."
+          >
+            我们从结核病防治知识出发，把准确、简洁、可行动的公共健康信息带进校园、社区与边远山区。
           </p>
           <div class="hero-actions" aria-label="Hero actions" data-reveal>
-            <a class="button button-dark" href="#glimmer">Explore Our Work</a>
-            <a class="button button-light" href="#join">Join the Society</a>
+            <a
+              class="button button-dark"
+              href="#tb-knowledge"
+              data-zh="先看结核病知识"
+              data-en="Start with TB Knowledge"
+            >
+              先看结核病知识
+            </a>
+            <a class="button button-light" href="#glimmer" data-zh="了解健康微光" data-en="Explore Health Glimmer">
+              了解健康微光
+            </a>
           </div>
         </div>
-        <div class="hero-facts" aria-label="Society highlights">
+        <div class="hero-facts" aria-label="Tuberculosis knowledge highlights">
           <div data-reveal>
-            <span>01 / Health Literacy</span>
-            <strong>Learn</strong>
-            <p>Translate prevention knowledge into clear, practical peer education.</p>
+            <span data-zh="01 / 认识" data-en="01 / Recognize">01 / 认识</span>
+            <strong data-zh="结核病不是遥远的话题" data-en="TB is not distant">结核病不是遥远的话题</strong>
+            <p data-zh="它与校园、家庭和社区的日常健康意识有关。" data-en="It connects with everyday health awareness in schools, families, and communities.">
+              它与校园、家庭和社区的日常健康意识有关。
+            </p>
           </div>
           <div data-reveal>
-            <span>02 / Research Practice</span>
-            <strong>Research</strong>
-            <p>Study health questions through reading, surveys, and field observation.</p>
+            <span data-zh="02 / 预防" data-en="02 / Prevent">02 / 预防</span>
+            <strong data-zh="知识要能被记住" data-en="Knowledge should be usable">知识要能被记住</strong>
+            <p data-zh="症状、传播、筛查和治疗依从性需要被讲得清楚。" data-en="Symptoms, transmission, screening, and treatment adherence need clear explanation.">
+              症状、传播、筛查和治疗依从性需要被讲得清楚。
+            </p>
           </div>
           <div data-reveal>
-            <span>03 / Outreach</span>
-            <strong>Act</strong>
-            <p>Connect prevention, health equity, and service in real communities.</p>
+            <span data-zh="03 / 行动" data-en="03 / Act">03 / 行动</span>
+            <strong data-zh="公共健康需要青年参与" data-en="Public health needs youth action">公共健康需要青年参与</strong>
+            <p data-zh="我们用传播、研究和服务把健康知识变成行动。" data-en="We turn health knowledge into action through communication, research, and service.">
+              我们用传播、研究和服务把健康知识变成行动。
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="intro section-pad" id="mission" aria-labelledby="mission-title">
-        <div class="section-label" data-reveal>01 / Mission</div>
+      <section class="knowledge section-pad" id="tb-knowledge" aria-labelledby="knowledge-title">
+        <div class="section-label" data-reveal data-zh="01 / 结核病知识" data-en="01 / TB Knowledge">01 / 结核病知识</div>
         <div class="intro-grid">
-          <h2 id="mission-title" data-reveal>We study public health as both evidence and responsibility.</h2>
+          <h2
+            id="knowledge-title"
+            data-reveal
+            data-zh="先把结核病讲明白，再让更多人愿意行动。"
+            data-en="Make tuberculosis understandable first, then make action easier."
+          >
+            先把结核病讲明白，再让更多人愿意行动。
+          </h2>
           <div class="intro-copy" data-reveal>
-            <p>
-              YSPH-JNFLS brings together students who care about prevention, health equity, public communication, and
-              practical change. We learn from academic sources, translate knowledge into accessible education, and test
-              ideas through real projects.
+            <p
+              data-zh="新版网站会把公共健康知识放在最前面：少一点口号，多一点清楚的解释；少一点复杂术语，多一点能马上理解的判断。"
+              data-en="The redesigned site places public health knowledge first: fewer slogans, clearer explanations, fewer dense terms, and more practical judgment."
+            >
+              新版网站会把公共健康知识放在最前面：少一点口号，多一点清楚的解释；少一点复杂术语，多一点能马上理解的判断。
             </p>
-            <p>
-              Our work connects the classroom with the community: from campus health literacy to rural outreach, from
-              survey design to service programs for people who are often left outside the center of public attention.
+            <p
+              data-zh="等你补充正式内容后，这里可以变成结核病科普入口，覆盖症状、传播、预防、筛查、治疗、校园应对和反污名。"
+              data-en="After you provide final content, this section can become a TB learning hub covering symptoms, transmission, prevention, screening, treatment, school response, and stigma reduction."
+            >
+              等你补充正式内容后，这里可以变成结核病科普入口，覆盖症状、传播、预防、筛查、治疗、校园应对和反污名。
             </p>
-            <a class="text-link" href="about.html">Learn about our team and TB Prevention Hut</a>
           </div>
         </div>
-        <div class="mission-notes" data-reveal-group aria-label="Mission work areas">
+        <div class="knowledge-grid" data-reveal-group aria-label="Tuberculosis knowledge map">
           <article>
-            <span>Seminars</span>
-            <h3>Learn</h3>
-            <p>Reading groups and discussion sessions that build a shared vocabulary for public health.</p>
+            <span data-zh="什么是结核病" data-en="What TB Is">什么是结核病</span>
+            <h3 data-zh="用一分钟建立基本认识" data-en="A one-minute foundation">用一分钟建立基本认识</h3>
+            <p data-zh="后续填入：结核病定义、肺结核、常见误区。" data-en="Content later: definition, pulmonary TB, common misconceptions.">后续填入：结核病定义、肺结核、常见误区。</p>
           </article>
           <article>
-            <span>Surveys</span>
-            <h3>Research</h3>
-            <p>Student practice in asking concrete health questions, reading evidence, and writing briefs.</p>
+            <span data-zh="如何传播" data-en="How It Spreads">如何传播</span>
+            <h3 data-zh="把传播路径讲清楚" data-en="Explain transmission clearly">把传播路径讲清楚</h3>
+            <p data-zh="后续填入：空气传播、密闭空间、接触误解。" data-en="Content later: airborne transmission, enclosed spaces, contact myths.">后续填入：空气传播、密闭空间、接触误解。</p>
           </article>
           <article>
-            <span>Outreach</span>
-            <h3>Act</h3>
-            <p>Campus and community work that turns prevention knowledge into accessible action.</p>
+            <span data-zh="如何预防" data-en="How To Prevent">如何预防</span>
+            <h3 data-zh="让预防变成日常习惯" data-en="Turn prevention into habits">让预防变成日常习惯</h3>
+            <p data-zh="后续填入：通风、筛查、及时就医、规范治疗。" data-en="Content later: ventilation, screening, early care, treatment adherence.">后续填入：通风、筛查、及时就医、规范治疗。</p>
+          </article>
+          <article>
+            <span data-zh="如何对待患者" data-en="How To Respond">如何对待患者</span>
+            <h3 data-zh="反污名也是公共健康" data-en="Stigma reduction is public health">反污名也是公共健康</h3>
+            <p data-zh="后续填入：科学防护、尊重、支持治疗和回归校园。" data-en="Content later: scientific protection, respect, treatment support, returning to school.">后续填入：科学防护、尊重、支持治疗和回归校园。</p>
           </article>
         </div>
       </section>
 
       <section class="glimmer section-pad" id="glimmer" aria-labelledby="glimmer-title">
-        <div class="section-label" data-reveal>02 / Signature Initiative</div>
+        <div class="section-label" data-reveal data-zh="02 / 健康微光" data-en="02 / Health Glimmer">02 / 健康微光</div>
         <div class="glimmer-layout">
           <div class="glimmer-copy" data-glimmer-copy>
             <img class="initiative-logo" src="images/LOGO/health-glimmer-logo-transparent.png" alt="Health Glimmer project logo" />
-            <p class="kicker" data-reveal>Signature Project</p>
-            <h2 id="glimmer-title" data-reveal>Health Glimmer</h2>
-            <p class="glimmer-subtitle" data-reveal>Public health education for communities beyond the campus.</p>
-            <p data-reveal>
-              Health Glimmer is a student-initiated public health outreach project serving people and communities in
-              remote mountainous areas through accessible health education and careful youth-led communication.
+            <p class="kicker" data-reveal data-zh="发起项目" data-en="Signature Initiative">发起项目</p>
+            <h2 id="glimmer-title" data-reveal data-zh="健康微光" data-en="Health Glimmer">健康微光</h2>
+            <p
+              class="glimmer-subtitle"
+              data-reveal
+              data-zh="把公共健康教育带到边远山区的人群与社区。"
+              data-en="Bringing public health education to people and communities in remote mountain areas."
+            >
+              把公共健康教育带到边远山区的人群与社区。
             </p>
-            <p data-reveal>
-              The project turns reliable pieces of health knowledge into field-ready materials: hygiene education,
-              disease prevention, first-aid awareness, nutrition conversations, and age-appropriate classroom activities.
+            <p
+              data-reveal
+              data-zh="健康微光是由 Boyuan Zhu 发起的公共健康传播项目，面向资源相对不足的地区，用更容易理解的方式讲述健康知识。"
+              data-en="Health Glimmer is a public health communication initiative started by Boyuan Zhu, serving under-resourced areas with accessible health knowledge."
+            >
+              健康微光是由 Boyuan Zhu 发起的公共健康传播项目，面向资源相对不足的地区，用更容易理解的方式讲述健康知识。
+            </p>
+            <p
+              data-reveal
+              data-zh="在新版设计中，它会成为“知识如何走出校园”的主要故事线：从结核病科普，到卫生习惯、急救意识、营养沟通和社区陪伴。"
+              data-en="In the redesigned site, it becomes the main story of how knowledge travels beyond campus: from TB literacy to hygiene, first-aid awareness, nutrition, and community care."
+            >
+              在新版设计中，它会成为“知识如何走出校园”的主要故事线：从结核病科普，到卫生习惯、急救意识、营养沟通和社区陪伴。
             </p>
             <div class="glimmer-points project-meta" data-reveal-group>
               <div>
-                <span>Focus</span>
-                <strong>Health literacy</strong>
+                <span data-zh="对象" data-en="Audience">对象</span>
+                <strong data-zh="边远山区社区" data-en="Remote mountain communities">边远山区社区</strong>
               </div>
               <div>
-                <span>Method</span>
-                <strong>Education materials and outreach</strong>
+                <span data-zh="方式" data-en="Method">方式</span>
+                <strong data-zh="课堂、材料、交流" data-en="Classes, materials, dialogue">课堂、材料、交流</strong>
               </div>
               <div>
-                <span>Community</span>
-                <strong>Rural and under-resourced areas</strong>
+                <span data-zh="重点" data-en="Focus">重点</span>
+                <strong data-zh="健康知识可理解" data-en="Understandable health knowledge">健康知识可理解</strong>
               </div>
               <div>
-                <span>Output</span>
-                <strong>Accessible public health communication</strong>
-              </div>
-            </div>
-            <div class="motion-stats glimmer-stats" data-reveal-group aria-label="Health Glimmer impact signals">
-              <div>
-                <strong data-count data-target="3" data-pad="2">00</strong>
-                <span>Learning paths</span>
-              </div>
-              <div>
-                <strong data-count data-target="2" data-pad="2">00</strong>
-                <span>Field formats</span>
-              </div>
-              <div>
-                <strong data-count data-target="1" data-pad="2">00</strong>
-                <span>Shared mission</span>
+                <span data-zh="方向" data-en="Direction">方向</span>
+                <strong data-zh="从科普到行动" data-en="From literacy to action">从科普到行动</strong>
               </div>
             </div>
           </div>
@@ -171,16 +214,19 @@
             <figure class="image-card image-card-large" data-reveal data-story-card>
               <img
                 src="images/沂蒙山支教-健康微光/ba381d72ed8f31241ad00de2bcd9efe1.JPG"
-                alt="Health Glimmer student volunteers teaching public health in a mountain-area classroom"
+                alt="健康微光山区课堂公共健康教育"
               />
-              <figcaption><span>Field image 01</span> Health education session in a mountain-area classroom.</figcaption>
+              <figcaption>
+                <span data-zh="现场图像 01" data-en="Field Image 01">现场图像 01</span>
+                <span data-zh="山区课堂中的健康教育。" data-en="Health education in a mountain-area classroom.">山区课堂中的健康教育。</span>
+              </figcaption>
             </figure>
             <figure class="image-card image-card-small" data-reveal data-story-card>
-              <img
-                src="images/沂蒙山支教-健康微光/IMG_3627.JPG"
-                alt="Health Glimmer student volunteers standing with educational materials"
-              />
-              <figcaption><span>Field image 02</span> Student volunteers after a field teaching activity.</figcaption>
+              <img src="images/沂蒙山支教-健康微光/IMG_3627.JPG" alt="健康微光学生志愿者合影" />
+              <figcaption>
+                <span data-zh="现场图像 02" data-en="Field Image 02">现场图像 02</span>
+                <span data-zh="学生志愿者与教学材料。" data-en="Student volunteers with teaching materials.">学生志愿者与教学材料。</span>
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -188,75 +234,80 @@
 
       <section class="programs section-pad" id="programs" aria-labelledby="programs-title">
         <div class="section-head">
-          <div class="section-label" data-reveal>03 / Programs</div>
-          <h2 id="programs-title" data-reveal>A society built around learning, research, and field action.</h2>
+          <div class="section-label" data-reveal data-zh="03 / 行动项目" data-en="03 / Programs">03 / 行动项目</div>
+          <h2 id="programs-title" data-reveal data-zh="用更直观的方式，把公共健康讲给更多人。" data-en="Clearer public health communication for more people.">
+            用更直观的方式，把公共健康讲给更多人。
+          </h2>
         </div>
         <div class="program-grid">
           <article class="program-card" data-reveal>
             <span>01</span>
-            <h3>Health Glimmer Outreach</h3>
-            <p>Public health education and companionship for remote mountain communities.</p>
+            <h3 data-zh="结核病科普小屋" data-en="TB Prevention Hut">结核病科普小屋</h3>
+            <p data-zh="认证身份、校园传播与社区科普内容将在这里集中呈现。" data-en="Certification, campus communication, and community-facing TB content will be collected here.">认证身份、校园传播与社区科普内容将在这里集中呈现。</p>
             <dl>
-              <div><dt>Format</dt><dd>Field teaching</dd></div>
-              <div><dt>Output</dt><dd>Health lessons and local feedback</dd></div>
+              <div><dt data-zh="形式" data-en="Format">形式</dt><dd data-zh="图文科普" data-en="Visual explainers">图文科普</dd></div>
+              <div><dt data-zh="产出" data-en="Output">产出</dt><dd data-zh="可读、可转发、可执行" data-en="Readable, shareable, actionable">可读、可转发、可执行</dd></div>
             </dl>
           </article>
           <article class="program-card" data-reveal>
             <span>02</span>
-            <h3>Health Literacy Workshops</h3>
-            <p>Student-led sessions that translate prevention, hygiene, nutrition, and mental health knowledge.</p>
+            <h3 data-zh="校园公共健康教育" data-en="Campus Public Health Education">校园公共健康教育</h3>
+            <p data-zh="把疾病预防、卫生习惯和健康责任转化为适合同龄人的表达。" data-en="Translating prevention, hygiene, and health responsibility into peer-friendly language.">把疾病预防、卫生习惯和健康责任转化为适合同龄人的表达。</p>
             <dl>
-              <div><dt>Format</dt><dd>Campus workshop</dd></div>
-              <div><dt>Output</dt><dd>Peer education materials</dd></div>
+              <div><dt data-zh="形式" data-en="Format">形式</dt><dd data-zh="讲座与工作坊" data-en="Talks and workshops">讲座与工作坊</dd></div>
+              <div><dt data-zh="产出" data-en="Output">产出</dt><dd data-zh="校园健康材料" data-en="Campus health materials">校园健康材料</dd></div>
             </dl>
           </article>
           <article class="program-card" data-reveal>
             <span>03</span>
-            <h3>Epidemiology & Data Lab</h3>
-            <p>Introductory practice in surveys, data reading, risk communication, and evidence-based writing.</p>
+            <h3 data-zh="公共健康研究记录" data-en="Public Health Research Notes">公共健康研究记录</h3>
+            <p data-zh="用阅读、访谈、问卷和观察，把学生好奇心整理成清楚的问题。" data-en="Turning student curiosity into clear questions through reading, interviews, surveys, and observation.">用阅读、访谈、问卷和观察，把学生好奇心整理成清楚的问题。</p>
             <dl>
-              <div><dt>Format</dt><dd>Reading and data group</dd></div>
-              <div><dt>Output</dt><dd>Briefs and visual reports</dd></div>
+              <div><dt data-zh="形式" data-en="Format">形式</dt><dd data-zh="阅读与简报" data-en="Reading and briefs">阅读与简报</dd></div>
+              <div><dt data-zh="产出" data-en="Output">产出</dt><dd data-zh="短报告与图解" data-en="Short reports and visuals">短报告与图解</dd></div>
             </dl>
           </article>
           <article class="program-card" data-reveal>
             <span>04</span>
-            <h3>Hospital Charity Action</h3>
-            <p>Service activities supporting children and families facing serious illness through organized care.</p>
+            <h3 data-zh="社区服务与健康公平" data-en="Service and Health Equity">社区服务与健康公平</h3>
+            <p data-zh="通过健康微光、医院公益等项目理解公共健康背后的真实处境。" data-en="Understanding real public health contexts through Health Glimmer, hospital charity work, and service projects.">通过健康微光、医院公益等项目理解公共健康背后的真实处境。</p>
             <dl>
-              <div><dt>Format</dt><dd>Volunteer service</dd></div>
-              <div><dt>Output</dt><dd>Fundraising and awareness</dd></div>
+              <div><dt data-zh="形式" data-en="Format">形式</dt><dd data-zh="公益行动" data-en="Service action">公益行动</dd></div>
+              <div><dt data-zh="产出" data-en="Output">产出</dt><dd data-zh="记录、反思、合作" data-en="Records, reflection, collaboration">记录、反思、合作</dd></div>
             </dl>
           </article>
         </div>
       </section>
 
       <section class="evidence section-pad" id="research" aria-labelledby="research-title">
-        <div class="section-label" data-reveal>04 / Research & Publications</div>
+        <div class="section-label" data-reveal data-zh="04 / 研究记录" data-en="04 / Research">04 / 研究记录</div>
         <div class="evidence-grid">
           <div data-reveal>
-            <h2 id="research-title">We turn student curiosity into public-facing evidence.</h2>
-            <p>
-              Our research work is designed for high-school students who want to practice rigorous thinking before
-              publishing or presenting. Each brief asks a concrete health question, explains its evidence, and ends with
-              a practical recommendation.
+            <h2 id="research-title" data-zh="未来这里会成为青少年公共健康内容库。" data-en="This will become a youth public health knowledge library.">
+              未来这里会成为青少年公共健康内容库。
+            </h2>
+            <p
+              data-zh="你后续给我具体内容后，我会把它们整理成更适合阅读的科普卡片、短报告、活动记录和问答页面。"
+              data-en="After you provide the final content, I will shape it into readable explainers, short reports, activity records, and Q&A pages."
+            >
+              你后续给我具体内容后，我会把它们整理成更适合阅读的科普卡片、短报告、活动记录和问答页面。
             </p>
           </div>
           <div class="research-list" data-reveal-group>
             <article>
-              <span>Prevention / 2026 / YSPH-JNFLS Research Group</span>
-              <h3>Mountain Community Health Education Field Note</h3>
-              <p>A reflective report from Health Glimmer on classroom response, communication barriers, and next steps.</p>
+              <span data-zh="结核病 / 待补充" data-en="Tuberculosis / To be added">结核病 / 待补充</span>
+              <h3 data-zh="结核病基础知识" data-en="TB Basics">结核病基础知识</h3>
+              <p data-zh="适合放症状、传播、筛查、治疗和误区解释。" data-en="A place for symptoms, transmission, screening, treatment, and misconception explanations.">适合放症状、传播、筛查、治疗和误区解释。</p>
             </article>
             <article>
-              <span>Campus Health / 2026 / Education Working Group</span>
-              <h3>Hand Hygiene and Everyday Prevention Brief</h3>
-              <p>A concise evidence summary for peer education and school-based health communication.</p>
+              <span data-zh="校园健康 / 待补充" data-en="Campus Health / To be added">校园健康 / 待补充</span>
+              <h3 data-zh="校园里的公共健康" data-en="Public Health on Campus">校园里的公共健康</h3>
+              <p data-zh="适合放通风、卫生习惯、请假就医、同伴支持等内容。" data-en="A place for ventilation, hygiene habits, seeking care, and peer support.">适合放通风、卫生习惯、请假就医、同伴支持等内容。</p>
             </article>
             <article>
-              <span>Health Equity / 2026 / Outreach Working Group</span>
-              <h3>Why Public Health Must Reach Remote Communities</h3>
-              <p>An explainer connecting access, prevention, and youth responsibility in community health.</p>
+              <span data-zh="健康微光 / 待补充" data-en="Health Glimmer / To be added">健康微光 / 待补充</span>
+              <h3 data-zh="边远山区健康教育记录" data-en="Mountain Community Health Education">边远山区健康教育记录</h3>
+              <p data-zh="适合放项目介绍、课程内容、现场反馈和反思。" data-en="A place for project details, lesson content, field feedback, and reflection.">适合放项目介绍、课程内容、现场反馈和反思。</p>
             </article>
           </div>
         </div>
@@ -265,67 +316,33 @@
       <section class="story section-pad" aria-labelledby="story-title">
         <div class="story-grid">
           <figure data-reveal>
-            <img
-              src="images/千佛山医院白血病儿童跳蚤市场/IMG_4063.JPG"
-              alt="Student volunteers supporting a hospital charity activity"
-            />
+            <img src="images/千佛山医院白血病儿童跳蚤市场/IMG_4063.JPG" alt="学生志愿者参与医院公益活动" />
           </figure>
           <div data-reveal>
-            <div class="section-label">05 / Community Action</div>
-            <h2 id="story-title">Public health is also care, presence, and organized responsibility.</h2>
-            <p>
-              Beyond classroom education, YSPH-JNFLS participates in service projects that help students understand
-              public health as a lived social practice. Charity activities, hospital-facing support, and community
-              campaigns allow members to see how prevention and compassion meet in real settings.
+            <div class="section-label" data-zh="05 / 公益行动" data-en="05 / Community Action">05 / 公益行动</div>
+            <h2 id="story-title" data-zh="公共健康不只在书本里，也在真实的人群中。" data-en="Public health lives not only in books, but among real people.">
+              公共健康不只在书本里，也在真实的人群中。
+            </h2>
+            <p
+              data-zh="网站会先呈现可理解的健康知识，再呈现我们如何把知识带到学校、社区、医院和边远山区。团队介绍会服务于这个使命，而不是抢在使命前面。"
+              data-en="The site now presents understandable health knowledge first, then shows how we bring it to schools, communities, hospitals, and remote mountain areas. Team stories support the mission rather than replacing it."
+            >
+              网站会先呈现可理解的健康知识，再呈现我们如何把知识带到学校、社区、医院和边远山区。团队介绍会服务于这个使命，而不是抢在使命前面。
             </p>
-            <a class="text-link" href="#join">Propose a collaboration</a>
           </div>
         </div>
       </section>
 
-      <section class="events section-pad" aria-labelledby="events-title">
-        <div class="section-head">
-          <div class="section-label" data-reveal>06 / Events</div>
-          <h2 id="events-title" data-reveal>Upcoming and recent work</h2>
-        </div>
-        <div class="event-list" data-reveal-group>
-          <article>
-            <time datetime="2026">2026</time>
-            <h3>Health Glimmer Mountain Outreach</h3>
-            <p>Field teaching and health literacy activities for students and communities in remote mountainous areas.</p>
-            <span>Signature Project</span>
-          </article>
-          <article>
-            <time datetime="2026">2026</time>
-            <h3>Campus Health Literacy Forum</h3>
-            <p>A student-led forum on prevention, evidence-based communication, and public health responsibility.</p>
-            <span>Planned</span>
-          </article>
-          <article>
-            <time datetime="2026">2026</time>
-            <h3>Hospital Charity Service</h3>
-            <p>Volunteer participation supporting children, families, and public awareness through organized service.</p>
-            <span>Community Action</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="join section-pad" id="join" aria-labelledby="join-title">
+      <section class="join section-pad contact-section" id="contact" aria-labelledby="contact-title">
         <div data-reveal>
-          <div class="section-label">07 / Join</div>
-          <h2 id="join-title">Join YSPH-JNFLS if you care about evidence, health equity, and practical change.</h2>
+          <div class="section-label" data-zh="06 / 联系" data-en="06 / Contact">06 / 联系</div>
+          <h2 id="contact-title" data-zh="联系济南外国语学校青年公共卫生学会" data-en="Contact YSPH-JNFLS">
+            联系济南外国语学校青年公共卫生学会
+          </h2>
         </div>
-        <div class="join-panel" data-reveal>
-          <p>
-            We welcome students interested in public health research, health education, writing, design, event
-            organization, field service, and community partnerships.
-          </p>
-          <div class="contact-lines">
-            <a href="mailto:contact@ysph-jnfls.org">Apply to Join</a>
-            <a href="mailto:contact@ysph-jnfls.org">contact@ysph-jnfls.org</a>
-            <a href="mailto:contact@ysph-jnfls.org">Propose a Collaboration</a>
-            <span>Jinan Foreign Language School</span>
-          </div>
+        <div class="join-panel contact-panel" data-reveal>
+          <p data-zh="邮箱" data-en="Email">邮箱</p>
+          <div class="contact-email">twistedgxxx7@gmail.com</div>
         </div>
       </section>
     </main>
@@ -333,12 +350,16 @@
     <footer class="site-footer">
       <div>
         <strong>YSPH-JNFLS</strong>
-        <p>Youth Society for Public Health in JNFLS</p>
+        <p data-zh="济南外国语学校青年公共卫生学会" data-en="Youth Society for Public Health in JNFLS">
+          济南外国语学校青年公共卫生学会
+        </p>
       </div>
-      <p>Professional. Academic. Warm. Action-oriented.</p>
+      <p data-zh="结核病知识传播 / 公共健康教育 / 青年行动" data-en="Tuberculosis literacy / Public health education / Youth action">
+        结核病知识传播 / 公共健康教育 / 青年行动
+      </p>
     </footer>
 
-    <script src="script.js?v=design2"></script>
+    <script src="script.js?v=design6"></script>
     <script src="motion.js?v=design5" defer></script>
   </body>
 </html>
