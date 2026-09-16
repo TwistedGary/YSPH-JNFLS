@@ -1,0 +1,51 @@
+/* 成员简介在原卡片上提供完整点击区域，详情用原生对话框呈现。 */
+.member-card.is-interactive { position: relative; min-height: 0; padding-bottom: 62px; }
+.member-card.is-interactive > div > p { display: none; }
+.member-card.is-interactive .member-photo { transition: filter 200ms ease; }
+.member-card.is-interactive:hover .member-photo { filter: brightness(1.04); }
+.member-photo .member-portrait-boyuan { object-position: center 30%; }
+.member-photo .member-portrait-cui { object-position: center 30%; }
+.member-photo .member-portrait-huang { object-position: center 25%; transform: scale(1.12); }
+.member-card.is-interactive:focus-within { outline: 2px solid var(--color-red); outline-offset: 6px; }
+.member-open { position: absolute; inset: 0; width: 100%; height: 100%; display: flex; align-items: flex-end; justify-content: space-between; padding: 0 0 20px; border: 0; border-radius: 0; background: transparent; color: var(--color-ink); font: 500 11px var(--font-body); text-align: left; cursor: pointer; z-index: 1; }
+.member-open:focus-visible { outline: none; }
+.member-open:hover,.member-open:focus-visible { color: var(--color-red); }
+.member-open .member-open-arrow { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid var(--color-stone); border-radius: 50%; font-size: 16px; transition: background 180ms,color 180ms,border-color 180ms; }
+.member-open:hover .member-open-arrow,.member-open:focus-visible .member-open .member-open-arrow { background: var(--color-red); border-color: var(--color-red); color: var(--color-paper); }
+.member-open .member-open-label { padding-bottom: 7px; }
+body.member-profile-open { overflow: hidden; }
+.member-dialog { position: fixed; inset: 0; width: min(720px,calc(100vw - 40px)); max-width: none; max-height: calc(100dvh - 48px); padding: 0; margin: auto; overflow-y: auto; border: 1px solid var(--color-stone); border-radius: 4px; background: var(--color-paper); color: var(--color-ink); box-shadow: 0 30px 100px #11111140; }
+.member-dialog[open] { animation: member-arrive 240ms var(--ease-editorial); }
+.member-dialog::backdrop { background: #18201999; backdrop-filter: blur(6px); }
+.member-dialog-layout { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); min-height: 430px; }
+.member-dialog-portrait { min-width: 0; position: relative; overflow: hidden; background: var(--color-paper-deep); }
+.member-dialog-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; position: absolute; inset: 0; }
+.member-dialog-portrait .member-portrait-boyuan { object-position: center 30%; }
+.member-dialog-portrait .member-portrait-cui { object-position: center 30%; }
+.member-dialog-portrait .member-portrait-huang { object-position: center 25%; transform: scale(1.12); }
+.member-dialog-portrait.is-placeholder { display: grid; place-items: center; }
+.member-profile-initial { font: 500 italic 130px/1 var(--font-display); color: var(--color-red); }
+.member-dialog-content { padding: 48px 32px 32px; }
+.member-dialog-eyebrow { font-size: 9px; color: var(--editorial-muted); letter-spacing: .12em; margin: 0 0 24px; }
+.member-dialog h2 { font: 500 44px/1.05 var(--font-display); margin: 0 0 16px; overflow-wrap: anywhere; }
+.member-dialog-role { font: 500 11px/1.8 var(--font-body); color: var(--color-red); margin: 0; }
+.member-dialog-rule { height: 1px; background: var(--color-stone); margin: 22px 0; }
+.member-dialog-bio { font-size: 15px; line-height: 1.85; margin: 0; white-space: pre-line; }
+.member-dialog-note { font-size: 11px; line-height: 1.8; color: var(--editorial-muted); margin: 20px 0 0; }
+.member-dialog-signature { font-size: 9px; letter-spacing: .1em; color: var(--editorial-muted); margin: 28px 0 0; }
+.member-dialog-close { position: absolute; top: 10px; right: 10px; z-index: 2; width: 40px; height: 40px; padding: 0; display: grid; place-items: center; border: 1px solid var(--color-stone); border-radius: 50%; background: var(--color-paper); color: var(--color-ink); font: 400 27px/1 var(--font-body); cursor: pointer; }
+.member-dialog-close:hover { color: var(--color-red); border-color: var(--color-red); }
+body[data-language='zh'] .member-dialog h2 { font-family: 'Songti SC',serif; font-size: 34px; line-height: 1.3; }
+@keyframes member-arrive { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: none; } }
+@media(max-width:600px) {
+ .member-dialog { width: calc(100vw - 32px); max-height: calc(100dvh - 32px); }
+ .member-dialog-layout { grid-template-columns: 1fr; min-height: 0; }
+ .member-dialog-portrait { height: 230px; }
+ .member-dialog-portrait img { object-position: center 25%; }
+ .member-dialog-content { padding: 26px; }
+ .member-dialog-eyebrow { margin-bottom: 18px; }
+ .member-dialog h2 { font-size: 38px; }
+ .member-dialog-bio { font-size: 14px; }
+ .member-dialog-signature { margin-top: 24px; }
+}
+@media(prefers-reduced-motion:reduce) { .member-dialog[open] { animation: none; } }

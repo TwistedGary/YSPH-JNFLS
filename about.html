@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,19 +8,16 @@
       content="关于济南外国语学校青年公共卫生学会、结核病科普小屋认证身份、核心成员与青年公共健康行动。"
     />
     <title>关于我们 | YSPH-JNFLS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css?v=design6" />
-  </head>
+
+
+
+    <link rel="stylesheet" href="styles.css?v=journal10" />
+  <link rel="stylesheet" href="fonts.css?v=editorial11"><link rel="stylesheet" href="editorial.css?v=editorial11"><link rel="stylesheet" href="members.css?v=members12"></head>
   <body class="light-page">
     <header class="site-header header-light" data-header>
       <a class="brand" href="index.html#top" aria-label="YSPH-JNFLS home">
         <img src="images/LOGO/society-mark-transparent.png" alt="" />
-        <span>YSPH-JNFLS</span>
+        <span class="brand-copy"><span class="brand-name">YSPH-JNFLS</span><span class="brand-descriptor" data-zh="青年公共卫生学会" data-en="Youth Society for Public Health">Youth Society for Public Health</span></span>
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
@@ -29,19 +26,48 @@
       </button>
 
       <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
-        <a href="about.html" aria-current="page" data-zh="关于我们" data-en="About Us">关于我们</a>
-        <a href="index.html#tb-knowledge" data-zh="结核病知识" data-en="TB Knowledge">结核病知识</a>
-        <a href="index.html#glimmer" data-zh="健康微光" data-en="Health Glimmer">健康微光</a>
-        <a href="index.html#programs" data-zh="行动项目" data-en="Programs">行动项目</a>
-        <a href="index.html#research" data-zh="研究记录" data-en="Research">研究记录</a>
-        <a href="index.html#contact" class="nav-cta" data-zh="联系" data-en="Contact">联系</a>
-        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">EN</button>
-      </nav>
+<div class="nav-dropdown" data-dropdown><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="explore-menu" data-dropdown-toggle><span data-en="Explore" data-zh="科普首页">Explore</span><span class="nav-chevron" aria-hidden="true"></span></button>
+<div class="nav-dropdown-menu" id="explore-menu"><p class="nav-menu-caption"><span data-en="Start with a question" data-zh="从一个问题开始">Start with a question</span></p>
+<a href="index.html#top"><span data-en="Home" data-zh="首页">Home</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="index.html#tb-knowledge"><span data-en="Featured: TB Explained" data-zh="本期专题：认识结核病">Featured: TB Explained</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="index.html#reading"><span data-en="Science Literacy" data-zh="科学素养">Science Literacy</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+</div></div>
+<div class="nav-dropdown" data-dropdown><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="tb-menu" data-dropdown-toggle><span data-en="TB Knowledge" data-zh="结核病知识">TB Knowledge</span><span class="nav-chevron" aria-hidden="true"></span></button>
+<div class="nav-dropdown-menu" id="tb-menu"><p class="nav-menu-caption"><span data-en="Understand the essentials" data-zh="读懂基础知识">Understand the essentials</span></p>
+<a href="index.html#basics"><span data-en="What Is TB?" data-zh="什么是结核病？">What Is TB?</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="index.html#transmission"><span data-en="How It Spreads" data-zh="如何传播">How It Spreads</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="index.html#infection"><span data-en="Infection vs. Disease" data-zh="感染与发病">Infection vs. Disease</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="index.html#care"><span data-en="Symptoms &amp; Seeking Care" data-zh="症状与就医">Symptoms &amp; Seeking Care</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+</div></div>
+<div class="nav-dropdown" data-dropdown><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="reading-menu" data-dropdown-toggle><span  data-zh="科普大全" data-en="Health Encyclopedia">Health Encyclopedia</span><span class="nav-chevron" aria-hidden="true"></span></button><div class="nav-dropdown-menu" id="reading-menu"><p class="nav-menu-caption" data-zh="按主题探索公共健康" data-en="Explore public health by topic">Explore public health by topic</p><a href="encyclopedia.html"><span  data-zh="全部文章" data-en="All Articles">All Articles</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="learn-tuberculosis.html"><span  data-zh="结核病" data-en="Tuberculosis">Tuberculosis</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="learn-hand-hygiene.html"><span  data-zh="手卫生" data-en="Hand Hygiene">Hand Hygiene</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="learn-nutrition.html"><span  data-zh="均衡饮食" data-en="Balanced Nutrition">Balanced Nutrition</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="learn-movement.html"><span  data-zh="日常运动" data-en="Everyday Movement">Everyday Movement</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="learn-antimicrobials.html"><span  data-zh="抗菌药物耐药" data-en="Antimicrobial Resistance">Antimicrobial Resistance</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a><a href="learn-health-information.html"><span  data-zh="健康信息辨别" data-en="Health Information">Health Information</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a></div></div>
+<div class="nav-dropdown" data-dropdown><button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="about-menu" data-dropdown-toggle><span data-en="About Us" data-zh="关于我们">About Us</span><span class="nav-chevron" aria-hidden="true"></span></button>
+<div class="nav-dropdown-menu" id="about-menu"><p class="nav-menu-caption"><span data-en="The people behind the science" data-zh="认识科普背后的我们">The people behind the science</span></p>
+<a href="about.html#who-we-are"><span data-en="Who We Are" data-zh="我们是谁">Who We Are</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="about.html#our-mission"><span data-en="Our Mission" data-zh="我们的使命">Our Mission</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="about.html#our-community"><span data-en="Our Community" data-zh="我们的社区">Our Community</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="about.html#members"><span data-en="Our Team" data-zh="我们的团队">Our Team</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="about.html#glimmer"><span data-en="Health Glimmer" data-zh="健康微光">Health Glimmer</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+</div></div>
+<div class="nav-dropdown" data-dropdown><button class="nav-dropdown-toggle nav-contact-toggle" type="button" aria-expanded="false" aria-controls="contact-menu" data-dropdown-toggle><span data-en="Contact" data-zh="联系">Contact</span><span class="nav-chevron" aria-hidden="true"></span></button>
+<div class="nav-dropdown-menu" id="contact-menu"><p class="nav-menu-caption"><span data-en="Keep the conversation going" data-zh="与我们交流">Keep the conversation going</span></p>
+<a href="index.html#contact"><span data-en="Contact Details" data-zh="联系方式">Contact Details</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+<a href="mailto:twistedgxxx7@gmail.com"><span data-en="Email Us" data-zh="发送邮件">Email Us</span><span class="nav-link-arrow" aria-hidden="true">↗</span></a>
+</div></div>
+<button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">中文</button>
+</nav>
     </header>
 
-    <main>
-      <section class="about-hero section-pad" aria-labelledby="about-title">
-        <div class="section-label" data-reveal data-zh="关于我们" data-en="About Us">关于我们</div>
+    <main><section id="who-we-are" class="campus-hero" aria-labelledby="about-title">
+<img class="campus-hero-image" src="images/JNFLS/9c23fe79a8b282987402b739eb961bec.jpg" alt="Jinan Foreign Language School campus" fetchpriority="high" />
+<div class="campus-hero-shade"></div>
+<div class="campus-hero-content"><p class="eyebrow">YSPH-JNFLS / JINAN FOREIGN LANGUAGE SCHOOL</p>
+<h1 id="about-title"><span  data-zh="我们" data-en="Who we">Who we</span><em  data-zh="是谁" data-en="are.">are.</em></h1>
+<p data-en="A student community bringing public health knowledge into everyday life." data-zh="让公共健康知识走进日常生活的青年社群。">A student community bringing public health knowledge into everyday life.</p>
+<a href="#society-introduction" data-en="Meet our society ↓" data-zh="认识我们的社团 ↓">Meet our society ↓</a></div>
+<span class="campus-location" data-en="OUR CAMPUS · JINAN, CHINA" data-zh="我们的校园 · 中国济南">OUR CAMPUS · JINAN, CHINA</span>
+</section>
+      <section id="society-introduction" class="about-hero section-pad" aria-labelledby="society-title">
+        <div class="section-label" data-reveal data-zh="关于我们" data-en="About Us">About Us</div>
         <div class="about-hero-grid">
           <div>
             <img
@@ -52,155 +78,285 @@
             />
             <p class="eyebrow" data-reveal>YSPH-JNFLS</p>
             <p class="official-name" data-reveal>济南外国语学校青年公共卫生学会</p>
-            <h1
-              id="about-title"
+            <h2
+              id="society-title"
               data-reveal
-              data-zh="我们用青年语言传播结核病知识与公共健康意识。"
-              data-en="We communicate tuberculosis knowledge and public health awareness in a youth voice."
-            >
-              我们用青年语言传播结核病知识与公共健康意识。
-            </h1>
+              data-zh="我们是谁"
+              data-en="Who We Are"
+            >Who We Are</h2>
           </div>
           <div class="about-hero-copy" data-reveal>
             <p
               class="identity-line"
               data-zh="YSPH-JNFLS 是济南外国语学校的学生公共卫生学术社团，关注结核病防治、健康传播、研究实践与社区行动。"
               data-en="YSPH-JNFLS is a student public health society at Jinan Foreign Language School, focusing on tuberculosis prevention, health communication, research practice, and community action."
-            >
-              YSPH-JNFLS 是济南外国语学校的学生公共卫生学术社团，关注结核病防治、健康传播、研究实践与社区行动。
-            </p>
-            <p
-              data-zh="我们希望网站第一眼先呈现公共健康议题：什么是结核病、如何预防、如何科学看待患者、青年可以怎样参与。团队介绍放在其后，说明是谁在推动这些行动。"
-              data-en="The site now presents public health issues first: what tuberculosis is, how prevention works, how to respond without stigma, and how young people can participate. The team follows as the people behind the work."
-            >
-              我们希望网站第一眼先呈现公共健康议题：什么是结核病、如何预防、如何科学看待患者、青年可以怎样参与。团队介绍放在其后，说明是谁在推动这些行动。
-            </p>
+            >YSPH-JNFLS is a student public health society at Jinan Foreign Language School, focusing on tuberculosis prevention, health communication, research practice, and community action.</p>
+            <p data-zh="我们通过阅读、讨论和公共健康传播，让可靠的知识走进日常生活。" data-en="Through reading, discussion and public health communication, we bring reliable knowledge into everyday life.">Through reading, discussion and public health communication, we bring reliable knowledge into everyday life.</p>
             <p
               data-zh="我们也是中国科协下设中国防痨协会认证的防痨小屋，帮助在校园和社区中传播准确、清楚、有温度的结核病知识。"
               data-en="We are also a TB Prevention Hut certified by the Chinese Anti-Tuberculosis Association under the China Association for Science and Technology, helping spread accurate, clear, and humane TB knowledge in schools and communities."
-            >
-              我们也是中国科协下设中国防痨协会认证的防痨小屋，帮助在校园和社区中传播准确、清楚、有温度的结核病知识。
-            </p>
+            >We are also a TB Prevention Hut certified by the Chinese Anti-Tuberculosis Association under the China Association for Science and Technology, helping spread accurate, clear, and humane TB knowledge in schools and communities.</p>
             <div class="motion-stats about-stats" data-reveal-group aria-label="Society signals">
               <div>
                 <strong data-count data-target="1" data-pad="2">00</strong>
-                <span data-zh="防痨小屋" data-en="TB Prevention Hut">防痨小屋</span>
+                <span data-zh="防痨小屋" data-en="TB Prevention Hut">TB Prevention Hut</span>
               </div>
               <div>
                 <strong data-count data-target="6" data-pad="2">00</strong>
-                <span data-zh="核心成员席位" data-en="Core member seats">核心成员席位</span>
+                <span data-zh="核心成员席位" data-en="Core member seats">Core member seats</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="tb-hut section-pad" aria-labelledby="tb-title">
-        <div class="section-label" data-reveal data-zh="01 / 防痨小屋" data-en="01 / TB Prevention Hut">01 / 防痨小屋</div>
+      <section id="our-mission" class="tb-hut section-pad" aria-labelledby="tb-title">
+        <div class="section-label" data-reveal data-zh="01 / 防痨小屋" data-en="01 / TB Prevention Hut">01 / TB Prevention Hut</div>
         <div class="tb-grid">
           <div data-reveal>
             <h2
               id="tb-title"
-              data-zh="认证不是终点，关键是让结核病知识真正被看见。"
-              data-en="Certification is not the endpoint; the real work is making TB knowledge visible."
-            >
-              认证不是终点，关键是让结核病知识真正被看见。
-            </h2>
-            <p
-              data-zh="新版网站会把防痨小屋设计成清楚的传播路径，而不只是一个头衔。每一块内容都应该回答一个具体问题，让读者更快理解、更愿意行动。"
-              data-en="The redesigned site treats the TB Prevention Hut as a clear communication pathway, not only a title. Each content block should answer one specific question and help readers understand and act faster."
-            >
-              新版网站会把防痨小屋设计成清楚的传播路径，而不只是一个头衔。每一块内容都应该回答一个具体问题，让读者更快理解、更愿意行动。
-            </p>
+              data-zh="让健康知识更容易被理解。"
+              data-en="Our Mission: make health knowledge understandable."
+            >Our Mission: make health knowledge understandable.</h2>
+            <p data-zh="从认识疾病到减少污名，我们用清楚的解释支持校园和社区的健康教育。" data-en="From understanding disease to reducing stigma, we support school and community health education with clear explanations.">From understanding disease to reducing stigma, we support school and community health education with clear explanations.</p>
           </div>
           <div class="tb-list archive-note" aria-label="TB Prevention Hut work areas" data-reveal-group>
             <article>
-              <span data-zh="第一步" data-en="Step One">第一步</span>
-              <h3 data-zh="认识结核病" data-en="Understand TB">认识结核病</h3>
-              <p data-zh="用短句、图解和问答解释结核病是什么。" data-en="Use short text, visuals, and Q&A to explain what tuberculosis is.">用短句、图解和问答解释结核病是什么。</p>
+              <span data-zh="第一步" data-en="Step One">Step One</span>
+              <h3 data-zh="认识结核病" data-en="Understand TB">Understand TB</h3>
+              <p data-zh="用短句、图解和问答解释结核病是什么。" data-en="Use short text, visuals, and Q&A to explain what tuberculosis is.">Use short text, visuals, and Q&A to explain what tuberculosis is.</p>
             </article>
             <article>
-              <span data-zh="第二步" data-en="Step Two">第二步</span>
-              <h3 data-zh="学会科学预防" data-en="Learn prevention">学会科学预防</h3>
-              <p data-zh="把传播、筛查、通风、规范治疗讲成日常语言。" data-en="Explain transmission, screening, ventilation, and treatment adherence in everyday language.">把传播、筛查、通风、规范治疗讲成日常语言。</p>
+              <span data-zh="第二步" data-en="Step Two">Step Two</span>
+              <h3 data-zh="学会科学预防" data-en="Learn prevention">Learn prevention</h3>
+              <p data-zh="把传播、筛查、通风、规范治疗讲成日常语言。" data-en="Explain transmission, screening, ventilation, and treatment adherence in everyday language.">Explain transmission, screening, ventilation, and treatment adherence in everyday language.</p>
             </article>
             <article>
-              <span data-zh="第三步" data-en="Step Three">第三步</span>
-              <h3 data-zh="减少恐惧与污名" data-en="Reduce fear and stigma">减少恐惧与污名</h3>
-              <p data-zh="让防护更科学，让支持更有温度。" data-en="Make protection more scientific and support more humane.">让防护更科学，让支持更有温度。</p>
+              <span data-zh="第三步" data-en="Step Three">Step Three</span>
+              <h3 data-zh="减少恐惧与污名" data-en="Reduce fear and stigma">Reduce fear and stigma</h3>
+              <p data-zh="让防护更科学，让支持更有温度。" data-en="Make protection more scientific and support more humane.">Make protection more scientific and support more humane.</p>
             </article>
             <article>
-              <span data-zh="第四步" data-en="Step Four">第四步</span>
-              <h3 data-zh="把知识带出校园" data-en="Carry knowledge beyond campus">把知识带出校园</h3>
-              <p data-zh="通过健康微光、课堂活动和社区合作传播公共健康知识。" data-en="Share public health knowledge through Health Glimmer, classroom activities, and community partnerships.">通过健康微光、课堂活动和社区合作传播公共健康知识。</p>
+              <span data-zh="第四步" data-en="Step Four">Step Four</span>
+              <h3 data-zh="把知识带出校园" data-en="Carry knowledge beyond campus">Carry knowledge beyond campus</h3>
+              <p data-zh="通过健康微光、课堂活动和社区合作传播公共健康知识。" data-en="Share public health knowledge through Health Glimmer, classroom activities, and community partnerships.">Share public health knowledge through Health Glimmer, classroom activities, and community partnerships.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="members section-pad" aria-labelledby="members-title">
+      <section class="glimmer section-pad" id="glimmer" aria-labelledby="glimmer-title">
+        <div class="section-label" data-reveal data-zh="02 / 健康微光" data-en="02 / Health Glimmer">02 / Health Glimmer</div>
+        <div class="glimmer-layout">
+          <div class="glimmer-copy" data-glimmer-copy>
+            <img class="initiative-logo" src="images/LOGO/health-glimmer-logo-transparent.png" alt="Health Glimmer project logo" />
+            <p class="kicker" data-reveal data-zh="发起项目" data-en="Signature Initiative">Signature Initiative</p>
+            <h2 id="glimmer-title" data-reveal data-zh="健康微光" data-en="Health Glimmer">Health Glimmer</h2>
+            <p
+              class="glimmer-subtitle"
+              data-reveal
+              data-zh="把公共健康教育带到边远山区的人群与社区。"
+              data-en="Bringing public health education to people and communities in remote mountain areas."
+            >Bringing public health education to people and communities in remote mountain areas.</p>
+            <p
+              data-reveal
+              data-zh="健康微光是由 Boyuan Zhu 发起的公共健康传播项目，面向资源相对不足的地区，用更容易理解的方式讲述健康知识。"
+              data-en="Health Glimmer is a public health communication initiative started by Boyuan Zhu, serving under-resourced areas with accessible health knowledge."
+            >Health Glimmer is a public health communication initiative started by Boyuan Zhu, serving under-resourced areas with accessible health knowledge.</p>
+            <p data-zh="从结核病科普出发，健康微光关注如何让健康知识被更多人理解。" data-en="Beginning with TB literacy, Health Glimmer explores how health knowledge can reach more people.">Beginning with TB literacy, Health Glimmer explores how health knowledge can reach more people.</p>
+            <div class="glimmer-points project-meta" data-reveal-group>
+              <div>
+                <span data-zh="对象" data-en="Audience">Audience</span>
+                <strong data-zh="边远山区社区" data-en="Remote mountain communities">Remote mountain communities</strong>
+              </div>
+              <div>
+                <span data-zh="方式" data-en="Method">Method</span>
+                <strong data-zh="课堂、材料、交流" data-en="Classes, materials, dialogue">Classes, materials, dialogue</strong>
+              </div>
+              <div>
+                <span data-zh="重点" data-en="Focus">Focus</span>
+                <strong data-zh="健康知识可理解" data-en="Understandable health knowledge">Understandable health knowledge</strong>
+              </div>
+              <div>
+                <span data-zh="方向" data-en="Direction">Direction</span>
+                <strong data-zh="从科普到行动" data-en="From literacy to action">From literacy to action</strong>
+              </div>
+            </div>
+          </div>
+          <div class="image-stack" aria-label="Health Glimmer field images">
+            <figure class="image-card image-card-large" data-reveal data-story-card>
+              <img
+                src="images/沂蒙山支教-健康微光/ba381d72ed8f31241ad00de2bcd9efe1.JPG"
+                alt="健康微光山区课堂公共健康教育"
+              />
+              <figcaption>
+                <span data-zh="现场图像 01" data-en="Field Image 01">Field Image 01</span>
+                <span data-zh="山区课堂中的健康教育。" data-en="Health education in a mountain-area classroom.">Health education in a mountain-area classroom.</span>
+              </figcaption>
+            </figure>
+            <figure class="image-card image-card-small" data-reveal data-story-card>
+              <img src="images/沂蒙山支教-健康微光/IMG_3627.JPG" alt="健康微光学生志愿者合影" />
+              <figcaption>
+                <span data-zh="现场图像 02" data-en="Field Image 02">Field Image 02</span>
+                <span data-zh="学生志愿者与教学材料。" data-en="Student volunteers with teaching materials.">Student volunteers with teaching materials.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs section-pad" id="programs" aria-labelledby="programs-title">
         <div class="section-head">
-          <div class="section-label" data-reveal data-zh="02 / 核心成员" data-en="02 / Core Members">02 / 核心成员</div>
-          <h2 id="members-title" data-reveal data-zh="团队会被放在使命之后：谁在推动这些公共健康行动。" data-en="The team follows the mission: the people moving this public health work forward.">
-            团队会被放在使命之后：谁在推动这些公共健康行动。
-          </h2>
+          <div class="section-label" data-reveal data-zh="03 / 行动项目" data-en="03 / Programs">03 / Programs</div>
+          <h2 id="programs-title" data-reveal data-zh="用更直观的方式，把公共健康讲给更多人。" data-en="Clearer public health communication for more people.">Clearer public health communication for more people.</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card" data-reveal>
+            <span>01</span>
+            <h3 data-zh="结核病科普小屋" data-en="TB Prevention Hut">TB Prevention Hut</h3>
+            <p data-zh="认证身份、校园传播与社区科普内容将在这里集中呈现。" data-en="Certification, campus communication, and community-facing TB content will be collected here.">Certification, campus communication, and community-facing TB content will be collected here.</p>
+            <dl>
+              <div><dt data-zh="形式" data-en="Format">Format</dt><dd data-zh="图文科普" data-en="Visual explainers">Visual explainers</dd></div>
+              <div><dt data-zh="产出" data-en="Output">Output</dt><dd data-zh="可读、可转发、可执行" data-en="Readable, shareable, actionable">Readable, shareable, actionable</dd></div>
+            </dl>
+          </article>
+          <article class="program-card" data-reveal>
+            <span>02</span>
+            <h3 data-zh="校园公共健康教育" data-en="Campus Public Health Education">Campus Public Health Education</h3>
+            <p data-zh="把疾病预防、卫生习惯和健康责任转化为适合同龄人的表达。" data-en="Translating prevention, hygiene, and health responsibility into peer-friendly language.">Translating prevention, hygiene, and health responsibility into peer-friendly language.</p>
+            <dl>
+              <div><dt data-zh="形式" data-en="Format">Format</dt><dd data-zh="讲座与工作坊" data-en="Talks and workshops">Talks and workshops</dd></div>
+              <div><dt data-zh="产出" data-en="Output">Output</dt><dd data-zh="校园健康材料" data-en="Campus health materials">Campus health materials</dd></div>
+            </dl>
+          </article>
+          <article class="program-card" data-reveal>
+            <span>03</span>
+            <h3 data-zh="公共健康研究记录" data-en="Public Health Research Notes">Public Health Research Notes</h3>
+            <p data-zh="用阅读、访谈、问卷和观察，把学生好奇心整理成清楚的问题。" data-en="Turning student curiosity into clear questions through reading, interviews, surveys, and observation.">Turning student curiosity into clear questions through reading, interviews, surveys, and observation.</p>
+            <dl>
+              <div><dt data-zh="形式" data-en="Format">Format</dt><dd data-zh="阅读与简报" data-en="Reading and briefs">Reading and briefs</dd></div>
+              <div><dt data-zh="产出" data-en="Output">Output</dt><dd data-zh="短报告与图解" data-en="Short reports and visuals">Short reports and visuals</dd></div>
+            </dl>
+          </article>
+          <article class="program-card" data-reveal>
+            <span>04</span>
+            <h3 data-zh="社区服务与健康公平" data-en="Service and Health Equity">Service and Health Equity</h3>
+            <p data-zh="通过健康微光、医院公益等项目理解公共健康背后的真实处境。" data-en="Understanding real public health contexts through Health Glimmer, hospital charity work, and service projects.">Understanding real public health contexts through Health Glimmer, hospital charity work, and service projects.</p>
+            <dl>
+              <div><dt data-zh="形式" data-en="Format">Format</dt><dd data-zh="公益行动" data-en="Service action">Service action</dd></div>
+              <div><dt data-zh="产出" data-en="Output">Output</dt><dd data-zh="记录、反思、合作" data-en="Records, reflection, collaboration">Records, reflection, collaboration</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="evidence section-pad" id="research" aria-labelledby="research-title">
+        <div class="section-label" data-reveal data-zh="04 / 研究记录" data-en="04 / Research">04 / Research</div>
+        <div class="evidence-grid">
+          <div data-reveal>
+            <h2 id="research-title" data-zh="未来这里会成为青少年公共健康内容库。" data-en="This will become a youth public health knowledge library.">This will become a youth public health knowledge library.</h2>
+            <p
+              data-zh="你后续给我具体内容后，我会把它们整理成更适合阅读的科普卡片、短报告、活动记录和问答页面。"
+              data-en="After you provide the final content, I will shape it into readable explainers, short reports, activity records, and Q&A pages."
+            >After you provide the final content, I will shape it into readable explainers, short reports, activity records, and Q&A pages.</p>
+          </div>
+          <div class="research-list" data-reveal-group>
+            <article>
+              <span data-zh="结核病 / 待补充" data-en="Tuberculosis / To be added">Tuberculosis / To be added</span>
+              <h3 data-zh="结核病基础知识" data-en="TB Basics">TB Basics</h3>
+              <p data-zh="适合放症状、传播、筛查、治疗和误区解释。" data-en="A place for symptoms, transmission, screening, treatment, and misconception explanations.">A place for symptoms, transmission, screening, treatment, and misconception explanations.</p>
+            </article>
+            <article>
+              <span data-zh="校园健康 / 待补充" data-en="Campus Health / To be added">Campus Health / To be added</span>
+              <h3 data-zh="校园里的公共健康" data-en="Public Health on Campus">Public Health on Campus</h3>
+              <p data-zh="适合放通风、卫生习惯、请假就医、同伴支持等内容。" data-en="A place for ventilation, hygiene habits, seeking care, and peer support.">A place for ventilation, hygiene habits, seeking care, and peer support.</p>
+            </article>
+            <article>
+              <span data-zh="健康微光 / 待补充" data-en="Health Glimmer / To be added">Health Glimmer / To be added</span>
+              <h3 data-zh="边远山区健康教育记录" data-en="Mountain Community Health Education">Mountain Community Health Education</h3>
+              <p data-zh="适合放项目介绍、课程内容、现场反馈和反思。" data-en="A place for project details, lesson content, field feedback, and reflection.">A place for project details, lesson content, field feedback, and reflection.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-community" class="story section-pad" aria-labelledby="story-title">
+        <div class="story-grid">
+          <figure data-reveal>
+            <img src="images/千佛山医院白血病儿童跳蚤市场/IMG_4063.JPG" alt="学生志愿者参与医院公益活动" />
+          </figure>
+          <div data-reveal>
+            <div class="section-label" data-zh="05 / 公益行动" data-en="05 / Community Action">05 / Community Action</div>
+            <h2 id="story-title" data-zh="从校园走向社区。" data-en="Our Community: beyond the classroom.">Our Community: beyond the classroom.</h2>
+            <p data-zh="我们的社区行动连接学校、医院和边远山区，让健康教育与真实需求相遇。" data-en="Our community work connects schools, hospitals and remote mountain communities, bringing health education closer to everyday needs.">Our community work connects schools, hospitals and remote mountain communities, bringing health education closer to everyday needs.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="members" class="members section-pad" aria-labelledby="members-title">
+        <div class="section-head">
+          <div class="section-label" data-reveal data-zh="02 / 核心成员" data-en="02 / Core Members">02 / Core Members</div>
+          <h2 id="members-title" data-reveal data-zh="一起推动科普的伙伴。" data-en="Meet the people behind the work.">Meet the people behind the work.</h2>
         </div>
         <div class="member-grid">
           <article class="member-card" data-member-card data-reveal>
             <div class="member-photo">
-              <img src="images/team/boyuan-zhu.jpg" alt="Portrait of Boyuan Zhu" />
+              <img class="member-portrait member-portrait-boyuan" src="images/team/boyuan-zhu-portrait.png" alt="祝博远 / Boyuan Zhu" />
             </div>
             <div>
-              <span data-zh="President / Founder / Health Glimmer Initiator" data-en="President / Founder / Health Glimmer Initiator">
-                President / Founder / Health Glimmer Initiator
-              </span>
-              <h3>Boyuan Zhu</h3>
+              <span data-zh="President / Founder / Health Glimmer Initiator" data-en="President / Founder / Health Glimmer Initiator">President / Founder / Health Glimmer Initiator</span>
+              <h3 data-zh="祝博远" data-en="Boyuan Zhu">Boyuan Zhu</h3>
               <p
                 data-zh="Executive Group / 创立 YSPH-JNFLS，发起健康微光项目，统筹学会方向、结核病科普、公共健康倡议与外部合作。"
                 data-en="Executive Group / Founded YSPH-JNFLS, initiated Health Glimmer, and leads society strategy, TB literacy, public health initiatives, and external collaboration."
-              >
-                Executive Group / 创立 YSPH-JNFLS，发起健康微光项目，统筹学会方向、结核病科普、公共健康倡议与外部合作。
-              </p>
+              >Executive Group / Founded YSPH-JNFLS, initiated Health Glimmer, and leads society strategy, TB literacy, public health initiatives, and external collaboration.</p>
             </div>
           </article>
           <article class="member-card" data-member-card data-reveal>
-            <div class="member-photo placeholder-photo" aria-hidden="true">H</div>
+            <div class="member-photo">
+              <img class="member-portrait member-portrait-cui" src="images/team/cui-yuanshuo-portrait.png" alt="崔原硕 / Yuanshuo Cui" />
+            </div>
             <div>
-              <span data-zh="健康微光项目负责人" data-en="Health Glimmer Lead">健康微光项目负责人</span>
-              <h3 data-zh="待补充" data-en="Member Name">待补充</h3>
-              <p data-zh="Outreach Group / 负责山区健康教育、课程材料与现场记录。" data-en="Outreach Group / Coordinates mountain-area health education, lesson materials, and field records.">Outreach Group / 负责山区健康教育、课程材料与现场记录。</p>
+              <span data-zh="副社长兼联合创始人" data-en="VP &amp; Co-Founder">VP &amp; Co-Founder</span>
+              <h3 data-zh="崔原硕" data-en="Yuanshuo Cui">Yuanshuo Cui</h3>
+              <p data-zh="内容共创者 / 聚焦生物、生物化学与公共健康科普。" data-en="Content Co-Creator / Focused on biology, biochemistry, and public health communication.">Content Co-Creator / Focused on biology, biochemistry, and public health communication.</p>
+              <p class="member-profile-copy" hidden data-zh="我对生物、生物化学和公共健康一直很感兴趣。在创建这个科普网站时，我作为内容共创者，希望将自己了解到的健康知识带给更多有需要的人。我相信，科普并不只是把专业知识简单化，更重要的是保证信息准确，并让不同年龄的读者真正理解。&#10;&#10;在过去的支教活动中，我通过查阅资料、整理内容、设计宣传材料以及与小学生交流，也开始更加关注科学知识在传播过程中可能产生的误解。这些经历让我对公共健康和科学传播有了更直观的认识，也让我希望继续通过自己的学习和实践，让更多人接触到可靠、易懂的健康信息。&#10;&#10;除了生物与健康领域，我也喜欢通过不同的活动探索自己的兴趣。我长期参加学校 Biochemistry Club 生化社，并曾在药物实验室进行实习，接触基础实验操作和实验室工作。同时，我从小学习法国号并参加学校乐团，也坚持田径训练、动漫创作。这些经历让我有机会发挥创造力、承担责任并与不同的人合作，也让我保持好奇心，逐渐形成了认真探索、主动实践和乐于分享的学习方式。" data-en="I have long been interested in biology, biochemistry, and public health. As a co-creator of this science-communication website, I hope to bring the health knowledge I learn to more people who may need it. To me, science communication is not simply a matter of making specialised knowledge easier; it also means keeping information accurate and making sure readers of different ages can truly understand it.&#10;&#10;During past teaching-volunteer work, I researched sources, organised content, designed outreach materials, and spoke with primary-school students. Those experiences made me more attentive to the misunderstandings that can emerge as scientific information is shared. They also gave me a more concrete understanding of public health and science communication, and strengthened my wish to help more people access reliable, understandable health information through continued learning and practice.&#10;&#10;Beyond biology and health, I explore my interests through a range of activities. I have participated in the school Biochemistry Club for years and completed an internship in a pharmaceutical laboratory, where I encountered basic laboratory techniques and everyday lab work. I have studied French horn since childhood and played in the school orchestra; I also continue track-and-field training and create animation. These experiences have helped me develop creativity, responsibility and collaboration while keeping my curiosity alive, shaping a way of learning that values careful inquiry, active practice and sharing with others."></p>
             </div>
           </article>
           <article class="member-card" data-member-card data-reveal>
             <div class="member-photo placeholder-photo" aria-hidden="true">T</div>
             <div>
-              <span data-zh="防痨科普负责人" data-en="TB Prevention Lead">防痨科普负责人</span>
-              <h3 data-zh="待补充" data-en="Member Name">待补充</h3>
-              <p data-zh="Prevention Group / 负责结核病科普内容、校园宣传与反污名表达。" data-en="Prevention Group / Develops TB education, campus awareness, and stigma-reduction communication.">Prevention Group / 负责结核病科普内容、校园宣传与反污名表达。</p>
+              <span data-zh="防痨科普负责人" data-en="TB Prevention Lead">TB Prevention Lead</span>
+              <h3 data-zh="待补充" data-en="Member Name">Member Name</h3>
+              <p data-zh="Prevention Group / 负责结核病科普内容、校园宣传与反污名表达。" data-en="Prevention Group / Develops TB education, campus awareness, and stigma-reduction communication.">Prevention Group / Develops TB education, campus awareness, and stigma-reduction communication.</p>
             </div>
           </article>
           <article class="member-card" data-member-card data-reveal>
-            <div class="member-photo placeholder-photo" aria-hidden="true">R</div>
+            <div class="member-photo">
+              <img class="member-portrait member-portrait-huang" src="images/team/huang-baohang.jpeg" alt="黄宝航 / Baohang Huang" />
+            </div>
             <div>
-              <span data-zh="研究负责人" data-en="Research Lead">研究负责人</span>
-              <h3 data-zh="待补充" data-en="Member Name">待补充</h3>
-              <p data-zh="Research Group / 负责阅读小组、问卷设计、资料整理与短报告写作。" data-en="Research Group / Guides reading groups, survey design, evidence organization, and brief writing.">Research Group / 负责阅读小组、问卷设计、资料整理与短报告写作。</p>
+              <span data-zh="运营总监" data-en="Director of Operation">Director of Operation</span>
+              <h3 data-zh="黄宝航" data-en="Baohang Huang">Baohang Huang</h3>
+              <p data-zh="个人资料待补充。" data-en="Profile coming soon.">Profile coming soon.</p>
             </div>
           </article>
           <article class="member-card" data-member-card data-reveal>
             <div class="member-photo placeholder-photo" aria-hidden="true">O</div>
             <div>
-              <span data-zh="外联负责人" data-en="Outreach Lead">外联负责人</span>
-              <h3 data-zh="待补充" data-en="Member Name">待补充</h3>
-              <p data-zh="Partnership Group / 负责老师、家庭、社区与合作方沟通。" data-en="Partnership Group / Builds relationships with teachers, families, communities, and collaborators.">Partnership Group / 负责老师、家庭、社区与合作方沟通。</p>
+              <span data-zh="外联负责人" data-en="Outreach Lead">Outreach Lead</span>
+              <h3 data-zh="待补充" data-en="Member Name">Member Name</h3>
+              <p data-zh="Partnership Group / 负责老师、家庭、社区与合作方沟通。" data-en="Partnership Group / Builds relationships with teachers, families, communities, and collaborators.">Partnership Group / Builds relationships with teachers, families, communities, and collaborators.</p>
             </div>
           </article>
           <article class="member-card" data-member-card data-reveal>
             <div class="member-photo placeholder-photo" aria-hidden="true">D</div>
             <div>
-              <span data-zh="设计与出版负责人" data-en="Design & Publications">设计与出版负责人</span>
-              <h3 data-zh="待补充" data-en="Member Name">待补充</h3>
-              <p data-zh="Publication Group / 负责图文设计、科普材料、报告排版与网站更新。" data-en="Publication Group / Maintains visual explainers, publications, reports, and website updates.">Publication Group / 负责图文设计、科普材料、报告排版与网站更新。</p>
+              <span data-zh="设计与出版负责人" data-en="Design & Publications">Design & Publications</span>
+              <h3 data-zh="待补充" data-en="Member Name">Member Name</h3>
+              <p data-zh="Publication Group / 负责图文设计、科普材料、报告排版与网站更新。" data-en="Publication Group / Maintains visual explainers, publications, reports, and website updates.">Publication Group / Maintains visual explainers, publications, reports, and website updates.</p>
             </div>
           </article>
         </div>
@@ -208,28 +364,31 @@
 
       <section class="about-cta section-pad" aria-labelledby="about-cta-title">
         <div data-reveal>
-          <div class="section-label" data-zh="03 / 联系" data-en="03 / Contact">03 / 联系</div>
-          <h2 id="about-cta-title" data-zh="联系济南外国语学校青年公共卫生学会" data-en="Contact YSPH-JNFLS">
-            联系济南外国语学校青年公共卫生学会
-          </h2>
+          <div class="section-label" data-zh="03 / 联系" data-en="03 / Contact">03 / Contact</div>
+          <h2 id="about-cta-title" data-zh="联系济南外国语学校青年公共卫生学会" data-en="Contact YSPH-JNFLS">Contact YSPH-JNFLS</h2>
         </div>
-        <div class="contact-email about-contact-email" data-reveal>twistedgxxx7@gmail.com</div>
+        <div class="about-contact-details" data-reveal>
+          <div class="contact-item">
+            <p data-zh="邮箱" data-en="Email">Email</p>
+            <div class="contact-email">twistedgxxx7@gmail.com</div>
+          </div>
+          <div class="contact-item">
+            <p data-zh="QQ群" data-en="QQ Group">QQ Group</p>
+            <div class="contact-email">706791566</div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer"><div class="footer-masthead"><span  data-zh="让知识" data-en="Science,">Science,</span><em  data-zh="与生活相遇。" data-en="shared.">shared.</em></div>
       <div>
         <strong>YSPH-JNFLS</strong>
-        <p data-zh="济南外国语学校青年公共卫生学会" data-en="Youth Society for Public Health in JNFLS">
-          济南外国语学校青年公共卫生学会
-        </p>
+        <p data-zh="济南外国语学校青年公共卫生学会" data-en="Youth Society for Public Health in JNFLS">Youth Society for Public Health in JNFLS</p>
       </div>
-      <p data-zh="结核病知识传播 / 公共健康教育 / 青年行动" data-en="Tuberculosis literacy / Public health education / Youth action">
-        结核病知识传播 / 公共健康教育 / 青年行动
-      </p>
-    </footer>
+      <p data-zh="结核病知识传播 / 公共健康教育 / 青年行动" data-en="Tuberculosis literacy / Public health education / Youth action">Tuberculosis literacy / Public health education / Youth action</p>
+    <a class="editor-link" href="admin.html" data-en="Editor login" data-zh="编辑登录">Editor login</a></footer>
 
-    <script src="script.js?v=design6"></script>
+    <script src="script.js?v=editorial11"></script>
     <script src="motion.js?v=design5" defer></script>
-  </body>
+  <script src="editorial.js?v=editorial11" defer></script><script src="members.js?v=members12" defer></script></body>
 </html>

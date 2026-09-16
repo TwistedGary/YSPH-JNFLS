@@ -1,0 +1,30 @@
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    environment:
+      YSPH_PUBLIC_URL: https://${YSPH_DOMAIN:?Set YSPH_DOMAIN}
+      YSPH_SETUP_TOKEN: ${YSPH_SETUP_TOKEN:?Set YSPH_SETUP_TOKEN}
+      YSPH_DB: /data/ysph.sqlite3
+    volumes:
+      - article_data:/data
+    expose:
+      - "8000"
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      YSPH_DOMAIN: ${YSPH_DOMAIN:?Set YSPH_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+volumes:
+  article_data:
+  caddy_data:
+  caddy_config:

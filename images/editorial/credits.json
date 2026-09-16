@@ -1,0 +1,42 @@
+{
+  "microscope": {
+    "path": "images/editorial/microscope.jpg",
+    "url": "https://images.unsplash.com/photo-1614308459036-779d0dfe51ff?fm=jpg&fit=max&w=1800&q=85",
+    "source": "https://unsplash.com/photos/fN6K30xtiKE",
+    "credit": "Logan Gutierrez / Unsplash",
+    "alt": "Laboratory microscope, illustrative photograph",
+    "license": "https://unsplash.com/license"
+  },
+  "hands": {
+    "path": "images/editorial/hands.jpg",
+    "url": "https://images.unsplash.com/photo-1584744646898-40ff0404e767?fm=jpg&fit=max&w=1800&q=85",
+    "source": "https://unsplash.com/s/photos/washing-hands",
+    "credit": "Unsplash",
+    "alt": "Hands being washed with soap under running water",
+    "license": "https://unsplash.com/license"
+  },
+  "nutrition": {
+    "path": "images/editorial/nutrition.jpg",
+    "url": "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?fm=jpg&fit=max&w=1800&q=85",
+    "source": "https://unsplash.com/photos/sliced-carrots-and-green-vegetable-bRdRUUtbxO0",
+    "credit": "Unsplash",
+    "alt": "A varied selection of vegetables",
+    "license": "https://unsplash.com/license"
+  },
+  "laboratory": {
+    "path": "images/editorial/laboratory.jpg",
+    "url": "https://images.unsplash.com/photo-1576765608741-911f44c98546?fm=jpg&fit=max&w=1800&q=85",
+    "source": "https://unsplash.com/photos/a-woman-in-a-lab-coat-looking-through-a-microscope-J8fXxhqTJ0U",
+    "credit": "CDC / Unsplash",
+    "alt": "Scientist examining a cell culture; general laboratory photograph",
+    "license": "https://unsplash.com/license"
+  },
+  "movement": {
+    "path": "images/editorial/movement.jpg",
+    "url": "https://images.unsplash.com/photo-1603455778956-d71832eafa4e?fm=jpg&fit=max&w=1800&q=85",
+    "source": "https://unsplash.com/s/photos/exercise-outdoors",
+    "credit": "Unsplash",
+    "alt": "A person running outdoors",
+    "license": "https://unsplash.com/license"
+  }
+}
