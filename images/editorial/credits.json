@@ -38,5 +38,20 @@
     "credit": "Unsplash",
     "alt": "A person running outdoors",
     "license": "https://unsplash.com/license"
+  },
+  "infectious-diseases": {
+    "path": "images/editorial/hands.jpg",
+    "url": "https://images.unsplash.com/photo-1584744646898-40ff0404e767?fm=jpg&fit=max&w=1800&q=85",
+    "source": "https://unsplash.com/s/photos/washing-hands",
+    "credit": "Unsplash",
+    "alt": "Hands being washed with soap under running water",
+    "license": "https://unsplash.com/license"
+  },
+  "health-information": {
+    "path": "images/editorial/health-information.png",
+    "source": "https://openai.com/",
+    "credit": "YSPH / OpenAI ImageGen",
+    "alt": "A reader compares research materials and health data with a magnifying glass",
+    "license": "Generated for YSPH"
   }
 }

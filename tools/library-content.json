@@ -44,48 +44,48 @@
   ],
   [
     "hand-hygiene",
-    "手卫生",
-    "Hand Hygiene",
-    "洗手为什么有用，怎样才算洗干净？",
-    "Why handwashing matters and how to do it well.",
+    "传染类疾病",
+    "Infectious Diseases",
+    "从传播途径到预防，认识常见传染类疾病。",
+    "Understand common infectious diseases through transmission and prevention.",
     [
       [
-        "为什么要洗手",
-        "Why wash hands?",
-        "手会接触公共物品和不同表面。洗手能够去除病菌，帮助减少病菌进入口鼻或传播给他人的机会。",
-        "Hands touch shared objects and surfaces. Washing removes germs and helps reduce their transfer to your mouth, nose and other people."
+        "什么是传染类疾病",
+        "What are infectious diseases?",
+        "传染类疾病由可引起感染的病原体造成，例如细菌、病毒、真菌或寄生虫。不同病原体造成的疾病、症状与风险并不相同，不能只凭一个症状自行判断。",
+        "Infectious diseases are caused by pathogens such as bacteria, viruses, fungi or parasites. Their illnesses, symptoms and risks differ, so one symptom alone cannot tell you what infection a person has."
       ],
       [
-        "五个步骤",
-        "Five steps",
-        "用干净流动水湿润双手，涂肥皂，揉搓至少20秒，冲净，然后擦干。手背、指缝和指甲周围也需要揉搓。",
-        "Wet hands under clean running water, lather with soap, scrub for at least 20 seconds, rinse and dry. Include the backs of hands, between fingers and around nails."
+        "传播方式各不相同",
+        "Transmission differs by disease",
+        "病原体可在人与人、动物、食物或水、媒介生物及环境之间传播；一种疾病也可能有不止一种传播方式。理解具体疾病的传播途径，才能选择合适的预防方法。",
+        "Pathogens can spread through people, animals, food or water, vectors and the environment; one disease may have more than one route. Knowing a specific disease's route helps people choose suitable prevention."
       ],
       [
-        "没有肥皂和水时",
-        "When soap and water are unavailable",
-        "可使用酒精含量至少60%的免洗洗手液，按标签用量揉搓至干。它不能清除所有类型的病菌；双手明显脏污时，优先用肥皂和水。",
-        "Use sanitizer containing at least 60% alcohol, following the label and rubbing until dry. It does not remove every type of germ. Prefer soap and water when hands are visibly dirty."
+        "预防需要因病制宜",
+        "Prevention fits the route",
+        "疫苗接种、通风、手卫生、食品与饮水安全、媒介防控和及时就医，都是公共卫生中可能使用的措施。具体应采用哪些措施，要看疾病、场所和当地卫生建议。",
+        "Vaccination, ventilation, hand hygiene, food and water safety, vector control and timely care can all matter in public health. The right measures depend on the disease, setting and local health guidance."
       ]
     ],
     [
-      "冲一下水就够了吗？",
-      "Is a quick rinse enough?",
-      "揉搓、肥皂、冲洗和干燥各有作用，不要只让手短暂沾水。",
-      "Scrubbing, soap, rinsing and drying each play a role; briefly wetting hands is not the full process."
+      "所有传染类疾病都会在人群中迅速传播吗？",
+      "Do all infectious diseases spread quickly between people?",
+      "不是。能否传播、传播方式和传播风险都取决于具体病原体与情境。避免给他人贴标签，也不要仅凭网络消息判断风险。",
+      "No. Whether a disease spreads, how it spreads and its risk all depend on the specific pathogen and setting. Avoid labelling people or judging risk from online messages alone."
     ],
     [
-      "吃东西前和如厕后，给自己留出认真洗手的时间。",
-      "Make time to wash hands before eating and after using the toilet."
+      "留意学校或当地卫生部门的可靠提醒；出现持续或严重症状时，及时向医疗专业人员咨询。",
+      "Follow reliable notices from your school or local health authority, and seek professional care for persistent or severe symptoms."
     ],
     [
       [
-        "CDC · Handwashing",
-        "https://www.cdc.gov/handwashing"
+        "CDC · How does disease spread?",
+        "https://www.cdc.gov/nerd-academy/disease-spread/index.html"
       ],
       [
-        "CDC · Hand sanitizer",
-        "https://www.cdc.gov/clean-hands/about/hand-sanitizer.html"
+        "WHO · One Health",
+        "https://www.who.int/news-room/fact-sheets/detail/one-health"
       ]
     ]
   ],

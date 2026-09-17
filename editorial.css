@@ -53,11 +53,11 @@ button,a,input,select,textarea { touch-action: manipulation; }
 .science-hero { padding-top: 126px; padding-bottom: 28px; }
 .science-masthead { padding-bottom: 18px; font-size: 9px; color: var(--editorial-muted); border-bottom: 1px solid var(--color-stone); letter-spacing: .09em; }
 .science-hero-grid { grid-template-columns: minmax(0,1.2fr) minmax(0,.9fr); gap: 56px; align-items: center; padding: 40px 0; }
-.science-hero h1 { margin: 26px 0; font-family: var(--font-display); font-size: clamp(62px,6.9vw,108px); line-height: .95; font-weight: 500; }
+.science-hero h1 { margin: 26px 0; font-family: var(--font-display); font-size: clamp(62px,6.9vw,108px); line-height: .95; font-weight: 600; }
 .science-hero h1 span,.science-hero h1 em { display: block; }
-.science-hero h1 em { color: var(--color-red); font-weight: 500; margin-top: 10px; }
+.science-hero h1 em { color: var(--color-red); font-weight: 600; margin-top: 10px; }
 .science-hero .eyebrow { color: var(--editorial-muted); font-size: 10px; }
-.science-deck { font-size: 14px; line-height: 1.85; max-width: 440px; margin: 30px 0; color: var(--editorial-muted); }
+.science-deck { font-size: 15px; line-height: 1.8; max-width: 440px; margin: 30px 0; color: var(--editorial-muted); font-weight: 500; }
 .science-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 30px; }
 .science-actions .science-button,.science-actions .text-link { margin: 0; }
 .science-button { background: var(--color-ink); border: 1px solid var(--color-ink); color: var(--color-paper); }
@@ -74,25 +74,25 @@ button,a,input,select,textarea { touch-action: manipulation; }
 .science-bottomline { display: flex; justify-content: space-between; gap: 24px; padding: 23px 0 0; border-top: 1px solid var(--color-stone); color: var(--editorial-muted); font-size: 8px; letter-spacing: .07em; }
 .science-bottomline a { text-decoration: none; white-space: nowrap; }
 .knowledge { padding-top: 95px; border-top: 0; }
-.knowledge h2 { font: 500 64px/1 var(--font-display); max-width: 700px; margin: 28px 0 48px; }
+.knowledge h2 { font: 600 64px/1 var(--font-display); max-width: 700px; margin: 28px 0 48px; }
 .knowledge-grid { gap: 0; border: 0; border-top: 1px solid var(--color-ink); }
 .knowledge-grid article { min-height: 240px; padding: 28px 28px 20px 0; background: transparent; border: 0; border-bottom: 1px solid var(--color-stone); }
 .knowledge-grid article + article { padding-left: 28px; border-left: 1px solid var(--color-stone); }
 .knowledge-grid span { font-size: 9px; font-weight: 500; letter-spacing: .08em; color: var(--color-red); }
-.knowledge-grid h3 { font: 500 32px/1.05 var(--font-display); margin: 30px 0 18px; }
-.knowledge-grid p { font-size: 13px; line-height: 1.8; color: var(--editorial-muted); }
+.knowledge-grid h3 { font: 600 32px/1.05 var(--font-display); margin: 30px 0 18px; }
+.knowledge-grid p { font-size: 14px; line-height: 1.75; color: var(--editorial-muted); font-weight: 500; }
 .source-note { font-size: 10px; line-height: 1.8; }
 .reading-room { max-width: none; padding-top: 84px; padding-bottom: 84px; background: var(--color-paper-deep); border: 0; }
 .reading-room > * { max-width: calc(1440px - 2 * var(--space-page)); margin-left: auto; margin-right: auto; }
-.reading-room h2 { font: 500 64px/1 var(--font-display); max-width: 800px; margin: 30px 0 48px; }
+.reading-room h2 { font: 600 64px/1 var(--font-display); max-width: 800px; margin: 30px 0 48px; }
 .library-grid { border: 0; gap: 36px; }
 .library-card { border: 0; padding: 0 0 24px; background: transparent; border-bottom: 1px solid var(--color-stone); }
 .library-card:hover { background: transparent; }
 .library-card-image { width: 100%; max-width: 100%; margin: 0 0 20px; aspect-ratio: 1.4; transition: filter 220ms; }
 .library-card:hover .library-card-image { filter: brightness(1.06); }
 .library-number { font-size: 9px; letter-spacing: .08em; }
-.library-card h3 { font: 500 34px/1.1 var(--font-display); margin: 15px 0; }
-.library-card p { font-size: 13px; line-height: 1.75; }
+.library-card h3 { font: 600 34px/1.1 var(--font-display); margin: 15px 0; }
+.library-card p { font-size: 14px; line-height: 1.7; font-weight: 500; }
 .library-card .text-link { font-size: 11px; }
 .library-card:not(:has(img)) { padding-top: 24px; border-top: 1px solid var(--color-stone); }
 .contact-section { padding-top: 85px; padding-bottom: 85px; border-top: 1px solid var(--color-stone); }

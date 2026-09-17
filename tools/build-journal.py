@@ -3,7 +3,7 @@ import json,re,html
 ROOT=Path(__file__).resolve().parent.parent
 E=html.escape
 credits=json.loads((ROOT/'images/editorial/credits.json').read_text())
-mapping={'tuberculosis':'microscope','hand-hygiene':'hands','nutrition':'nutrition','movement':'movement','antimicrobials':'laboratory'}
+mapping={'tuberculosis':'microscope','hand-hygiene':'infectious-diseases','nutrition':'nutrition','movement':'movement','antimicrobials':'laboratory','health-information':'health-information'}
 base=(ROOT/'index.html').read_text()
 header=re.search(r'<header.*?</header>',base,re.S)[0]
 footer=re.search(r'<footer.*?</footer>',base,re.S)[0]
