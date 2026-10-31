@@ -19,6 +19,6 @@ html[data-theme='dark'] .hero, html[data-theme='dark'] .button-light { color: #f
 html[data-theme='dark'] .admin-page button { color: #1c211e; }
 html[data-theme='dark'] .admin-page #admin-articles button { color: var(--color-ink); }
 html[data-theme='dark'] .admin-page button:hover { color: #1c211e; }
-.mission-handwriting { width: min(100%, 500px); margin: 38px 0 0; }
+.mission-handwriting { width: 100%; margin: 38px 0 0; }
 .mission-handwriting img { display: block; width: 100%; height: auto; }
-@media (max-width: 700px) { .mission-handwriting { width: min(100%, 440px); margin: 24px auto 8px; } }
+@media (max-width: 700px) { .mission-handwriting { margin: 24px 0 8px; } }
