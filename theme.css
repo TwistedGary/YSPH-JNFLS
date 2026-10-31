@@ -22,3 +22,5 @@ html[data-theme='dark'] .admin-page button:hover { color: #1c211e; }
 .mission-handwriting { width: 100%; margin: 38px 0 0; }
 .mission-handwriting img { display: block; width: 100%; height: auto; }
 @media (max-width: 700px) { .mission-handwriting { margin: 24px 0 8px; } }
+#society-introduction { background: linear-gradient(rgba(246, 242, 234, .92), rgba(246, 242, 234, .92)), url('images/about-chalkboard.png') center / cover no-repeat; }
+html[data-theme='dark'] #society-introduction { background: linear-gradient(rgba(28, 33, 30, .9), rgba(28, 33, 30, .9)), url('images/about-chalkboard.png') center / cover no-repeat; }
