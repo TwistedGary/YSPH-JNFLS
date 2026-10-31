@@ -51,10 +51,14 @@
  }
  try {
   const id=new URLSearchParams(location.search).get('id');if(!id)throw Error('missing');
-  const r=await fetch('/api/articles/'+encodeURIComponent(id),{signal:AbortSignal.timeout(12000)});
-  if(r.ok) article=await r.json();
-  else {
-   const fallback=await fetch('articles-seed.json',{signal:AbortSignal.timeout(12000),cache:'no-store'});
+  try {
+   if(location.hostname==='ysph-jnfls.org'||location.hostname==='www.ysph-jnfls.org'||location.hostname.endsWith('.github.io'))throw Error('static');
+   const r=await fetch('/api/articles/'+encodeURIComponent(id),{signal:AbortSignal.timeout(4000)});
+   if(!r.ok)throw Error('api');
+   article=await r.json();
+   if(!article || article.id!==id)throw Error('data');
+  }catch(_) {
+   const fallback=await fetch('articles-seed.json',{signal:AbortSignal.timeout(12000)});
    if(!fallback.ok)throw Error('server');
    article=(await fallback.json()).find(item=>item.id===id);
   }

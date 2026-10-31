@@ -89,10 +89,23 @@
  [search,category,sort].forEach(control=>control.addEventListener(control===search?'input':'change',()=>{page=1;render();updateURL();}));
  document.querySelector('#clear-filters').addEventListener('click',()=>{search.value='';category.value='';sort.value='newest';page=1;render();updateURL();search.focus();});
  document.addEventListener('ysph-language',()=>{categories();render();});
- fetch('/api/articles',{signal:AbortSignal.timeout(12000)}).then(async response=>{
-  if(response.status===404){const fallback=await fetch('articles-seed.json',{cache:'no-store'});if(!fallback.ok)throw Error();return fallback.json();}
-  if(!response.ok)throw Error();return response.json();
- }).then(data=>{articles=data.filter(article=>!retired.has(article.id));categories();category.value=query.get('category')||'';search.value=query.get('q')||'';render();}).catch(()=>{
+ async function loadArticles(){
+  try{
+   if(location.hostname==='ysph-jnfls.org'||location.hostname==='www.ysph-jnfls.org'||location.hostname.endsWith('.github.io'))throw Error('static');
+   const response=await fetch('/api/articles',{signal:AbortSignal.timeout(4000)});
+   if(!response.ok)throw Error('api');
+   const data=await response.json();
+   if(!Array.isArray(data))throw Error('data');
+   return data;
+  }catch(_){
+   const fallback=await fetch('articles-seed.json',{signal:AbortSignal.timeout(12000)});
+   if(!fallback.ok)throw Error('seed');
+   const data=await fallback.json();
+   if(!Array.isArray(data))throw Error('data');
+   return data;
+  }
+ }
+ loadArticles().then(data=>{articles=data.filter(article=>!retired.has(article.id));categories();category.value=query.get('category')||'';search.value=query.get('q')||'';render();}).catch(()=>{
   feed.replaceChildren();feed.setAttribute('aria-busy','false');pagination.hidden=true;
   const error=document.querySelector('#journal-error');error.hidden=false;error.textContent=lang()==='zh'?'文章暂时无法加载，请刷新重试。':'Articles could not be loaded. Please refresh to retry.';
  });
