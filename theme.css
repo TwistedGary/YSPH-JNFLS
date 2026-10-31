@@ -24,17 +24,19 @@ html[data-theme='dark'] .admin-page button:hover { color: #1c211e; }
 @media (max-width: 700px) { .mission-handwriting { margin: 24px 0 8px; } }
 #society-introduction { background: linear-gradient(rgba(246, 242, 234, .8), rgba(246, 242, 234, .8)), url('images/about-chalkboard.png') center / cover no-repeat; }
 html[data-theme='dark'] #society-introduction { background: linear-gradient(rgba(28, 33, 30, .76), rgba(28, 33, 30, .76)), url('images/about-chalkboard.png') center / cover no-repeat; }
-#society-introduction .about-logo { width: min(100%, 270px); margin-bottom: 24px; }
-#society-introduction .society-full-name { max-width: 480px; margin: 0; color: var(--color-ink); font-size: 22px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
-#society-introduction .official-name { margin: 12px 0 0; font-size: 19px; font-weight: 600; line-height: 1.5; letter-spacing: 0; }
+#society-introduction .about-hero-grid { gap: 48px; }
+#society-introduction .about-logo { width: min(100%, 330px); margin-bottom: 24px; }
+#society-introduction .society-full-name { max-width: 520px; margin: 0; color: var(--color-ink); font-size: 25px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+#society-introduction .official-name { margin: 12px 0 0; font-size: 22px; font-weight: 600; line-height: 1.5; letter-spacing: 0; }
 @media (max-width: 700px) {
-  #society-introduction .about-logo { width: min(70%, 240px); }
-  #society-introduction .society-full-name { font-size: 20px; }
-  #society-introduction .official-name { font-size: 18px; }
+  #society-introduction .about-hero-grid { gap: 30px; }
+  #society-introduction .about-logo { width: min(78%, 280px); }
+  #society-introduction .society-full-name { font-size: 22px; }
+  #society-introduction .official-name { font-size: 20px; }
 }
 .campus-identity { margin-top: 30px; }
-.campus-identity > span { color: var(--editorial-muted); font-size: 11px; font-weight: 600; }
+.campus-identity > span { color: var(--editorial-muted); font-size: 14px; font-weight: 600; }
 .campus-logos { display: flex; align-items: center; gap: 16px; margin-top: 12px; }
-.campus-school-logo { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
-.campus-international-logo { display: block; width: min(190px, 65%); height: auto; }
+.campus-school-logo { width: 68px; height: 68px; flex: 0 0 68px; border-radius: 50%; object-fit: cover; }
+.campus-international-logo { display: block; width: min(245px, calc(100% - 84px)); height: auto; }
 html[data-theme='dark'] .campus-international-logo { filter: invert(1); }
