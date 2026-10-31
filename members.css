@@ -6,6 +6,7 @@
 .member-photo .member-portrait-boyuan { object-position: center 30%; }
 .member-photo .member-portrait-cui { object-position: center 30%; }
 .member-photo .member-portrait-huang { object-position: center 25%; transform: scale(1.12); }
+.member-photo .member-portrait-zhong { object-position: center 25%; }
 .member-card.is-interactive:focus-within { outline: 2px solid var(--color-red); outline-offset: 6px; }
 .member-open { position: absolute; inset: 0; width: 100%; height: 100%; display: flex; align-items: flex-end; justify-content: space-between; padding: 0 0 20px; border: 0; border-radius: 0; background: transparent; color: var(--color-ink); font: 500 11px var(--font-body); text-align: left; cursor: pointer; z-index: 1; }
 .member-open:focus-visible { outline: none; }
@@ -18,11 +19,12 @@ body.member-profile-open { overflow: hidden; }
 .member-dialog[open] { animation: member-arrive 240ms var(--ease-editorial); }
 .member-dialog::backdrop { background: #18201999; backdrop-filter: blur(6px); }
 .member-dialog-layout { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); min-height: 430px; }
-.member-dialog-portrait { min-width: 0; position: relative; overflow: hidden; background: var(--color-paper-deep); }
+.member-dialog-portrait { min-width: 0; position: sticky; top: 0; align-self: start; height: min(560px, calc(100dvh - 48px)); min-height: 430px; overflow: hidden; background: var(--color-paper-deep); }
 .member-dialog-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; position: absolute; inset: 0; }
 .member-dialog-portrait .member-portrait-boyuan { object-position: center 30%; }
 .member-dialog-portrait .member-portrait-cui { object-position: center 30%; }
 .member-dialog-portrait .member-portrait-huang { object-position: center 25%; transform: scale(1.12); }
+.member-dialog-portrait .member-portrait-zhong { object-position: center 25%; }
 .member-dialog-portrait.is-placeholder { display: grid; place-items: center; }
 .member-profile-initial { font: 500 italic 130px/1 var(--font-display); color: var(--color-red); }
 .member-dialog-content { padding: 48px 32px 32px; }
@@ -35,12 +37,12 @@ body.member-profile-open { overflow: hidden; }
 .member-dialog-signature { font-size: 9px; letter-spacing: .1em; color: var(--editorial-muted); margin: 28px 0 0; }
 .member-dialog-close { position: absolute; top: 10px; right: 10px; z-index: 2; width: 40px; height: 40px; padding: 0; display: grid; place-items: center; border: 1px solid var(--color-stone); border-radius: 50%; background: var(--color-paper); color: var(--color-ink); font: 400 27px/1 var(--font-body); cursor: pointer; }
 .member-dialog-close:hover { color: var(--color-red); border-color: var(--color-red); }
-body[data-language='zh'] .member-dialog h2 { font-family: 'Songti SC',serif; font-size: 34px; line-height: 1.3; }
+body[data-language='zh'] .member-dialog h2 { font-family: var(--font-body); font-size: 34px; line-height: 1.3; }
 @keyframes member-arrive { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: none; } }
 @media(max-width:600px) {
  .member-dialog { width: calc(100vw - 32px); max-height: calc(100dvh - 32px); }
  .member-dialog-layout { grid-template-columns: 1fr; min-height: 0; }
- .member-dialog-portrait { height: 230px; }
+ .member-dialog-portrait { position: relative; height: 230px; min-height: 0; }
  .member-dialog-portrait img { object-position: center 25%; }
  .member-dialog-content { padding: 26px; }
  .member-dialog-eyebrow { margin-bottom: 18px; }
