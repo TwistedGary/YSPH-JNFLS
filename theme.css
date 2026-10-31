@@ -32,3 +32,9 @@ html[data-theme='dark'] #society-introduction { background: linear-gradient(rgba
   #society-introduction .society-full-name { font-size: 20px; }
   #society-introduction .official-name { font-size: 18px; }
 }
+.campus-identity { margin-top: 30px; }
+.campus-identity > span { color: var(--editorial-muted); font-size: 11px; font-weight: 600; }
+.campus-logos { display: flex; align-items: center; gap: 16px; margin-top: 12px; }
+.campus-school-logo { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+.campus-international-logo { display: block; width: min(190px, 65%); height: auto; }
+html[data-theme='dark'] .campus-international-logo { filter: invert(1); }
