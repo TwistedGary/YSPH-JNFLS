@@ -13,3 +13,9 @@ html[data-theme='dark'] .site-footer { background: #101512; }
 html[data-theme='dark'] input, html[data-theme='dark'] select, html[data-theme='dark'] textarea { color: var(--color-ink); background-color: var(--color-paper-deep); }
 html[data-theme='dark'] .journal-tools input, html[data-theme='dark'] .journal-tools select { background: transparent; }
 html[data-theme='dark'] .source-note a, html[data-theme='dark'] .member-dialog-bio { color: inherit; }
+html[data-theme='dark'] :is(.intro-copy, .mission-notes p, .program-card p, .evidence p, .story p, .event-list p, .join-panel p, .contact-lines span, .contact-panel p, .about-contact-details .contact-item p, .about-hero-copy, .about-stats span, .tb-hut p, .member-card p, .feature-note p, .reading-grid p, .campus-photo figcaption, .library-card p, .article-meta, .editor-help) { color: var(--editorial-muted); }
+html[data-theme='dark'] .glimmer { background: #202a24; color: #f6f2ea; }
+html[data-theme='dark'] .hero, html[data-theme='dark'] .button-light { color: #fff; }
+html[data-theme='dark'] .admin-page button { color: #1c211e; }
+html[data-theme='dark'] .admin-page #admin-articles button { color: var(--color-ink); }
+html[data-theme='dark'] .admin-page button:hover { color: #1c211e; }
